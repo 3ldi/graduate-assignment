@@ -4,10 +4,10 @@ const item1 = 10000;
 
 // function accepts one argumment, the price of an item 
 // and returns the new value after 2 seconds
-function cutPriceByHalf(x) {
+function cutPriceByHalf(price) {
     return new Promise(resolve => {
         setTimeout(() => {
-            resolve(x * 0.5);
+            resolve(price * 0.5);
         }, 1000);
     });
 }
